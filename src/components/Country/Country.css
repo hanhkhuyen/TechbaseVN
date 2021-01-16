@@ -1,0 +1,59 @@
+.list_country {
+    display: flex;
+}
+
+.list_country button {
+    margin-left: 10px;
+    box-shadow: none;
+    font-weight: 500;
+    background: #242B42;
+    border: 1px solid #242b24;
+    color: #ffffff;
+}
+
+.list_country button:hover,
+.list_country button:focus {
+    background: #242B42;
+    border: 1px solid #242b24;
+    color: #ffffff;
+}
+
+.list-country-dropdown ul {
+    height: 200px;
+    overflow: auto;
+}
+
+.country_detail {
+    margin-top: 10px;
+}
+
+.ant-table-thead>tr>th {
+    background-color: #242b24;
+    color: #ffffff;
+}
+
+.ant-table-tbody>tr>td {
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.note {
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: right;
+    color: rgba(55, 53, 47, 0.4);
+}
+
+@media screen and (max-width: 767px) {
+    .ant-table-container {
+        overflow: auto;
+    }
+
+    .list_country {
+        display: block;
+    }
+
+    .list_country button {
+        margin-left: 0;
+    }
+}

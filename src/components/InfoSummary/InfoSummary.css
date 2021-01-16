@@ -1,0 +1,24 @@
+.info_in-the-world {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px dashed #242B42;
+  margin-bottom: 40px;
+}
+
+.info_in-the-world h2 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #242B42;
+}
+
+.info_in-the-world ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.info_in-the-world ul li b {
+  color: #242b24;
+}

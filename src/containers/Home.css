@@ -1,0 +1,50 @@
+.page-wrap {
+    max-width: 960px;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.loading_page {
+    height: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    width: 100%;
+    font-size: 25px;
+    color: #242b24;
+    font-weight: bold;
+}
+
+.loading_wrap {
+    text-align: center;
+    width: 110px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.loading_page svg {
+    font-size: 60px;
+}
+
+.ant-divider {
+    border-top: 1px solid #242b24;
+}
+
+@media screen and (max-width: 1023px) {
+    .page-wrap {
+        max-width: calc(100% - 120px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-wrap {
+        max-width: 100%;
+    }
+}
