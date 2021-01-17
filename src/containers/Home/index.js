@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import InfoSummary from '../components/InfoSummary/InfoSummary';
-import Country from '../components/Country/Country';
+import InfoSummary from './components/InfoSummary/InfoSummary';
+import Country from './components/Country/Country';
 import { Divider } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
-import { useFetchData } from '../action';
-import './Home.css';
+import { useFetchData } from './action';
+import './index.css';
 
 const Home = () => {
     const [dataGlobal, apiMethod] = useFetchData();
@@ -25,12 +25,14 @@ const Home = () => {
     }
 
     return (
-        <div className="page-wrap">
-            <InfoSummary dataGlobal={dataGlobal.data.Global}/>
+        <div className="full-page">
+            <div className="page-wrap">
+                <InfoSummary dataGlobal={dataGlobal.data.Global}/>
 
-            <Divider />
+                <Divider />
 
-            <Country listCountry={dataGlobal.data.Countries}/>
+                <Country listCountry={dataGlobal.data.Countries}/>
+            </div>
         </div>
     );
 }

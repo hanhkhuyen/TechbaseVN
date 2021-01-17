@@ -5,6 +5,7 @@ const InfoSummary = (props) => {
   const {
     dataGlobal
   } = props
+
   return (
 
     <div className="info_in-the-world">

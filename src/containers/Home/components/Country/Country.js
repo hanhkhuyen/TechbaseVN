@@ -20,7 +20,7 @@ const Country = (props) => {
 
     setInfoDetail(null)
     return setCountryInfo(listCountry.filter(e => e.Country === selectCountry))
-  }, [selectCountry])
+  }, [selectCountry, listCountry])
 
   const menu = (
     <Menu>
@@ -66,37 +66,37 @@ const Country = (props) => {
       title: 'New Confirmed',
       dataIndex: 'NewConfirmed',
       key: 'NewConfirmed',
-      render: number => <div onClick={() => onhandleDetail('confirmed', 'new')}>{number}</div>,
+      render: number => <a href="#" onClick={() => onhandleDetail('confirmed', 'new')}>{number}</a>,
     },
     {
       title: 'New Deaths',
       dataIndex: 'NewDeaths',
       key: 'NewDeaths',
-      render: number => <div onClick={() => onhandleDetail('deaths', 'new')}>{number}</div>,
+      render: number => <a href="#" onClick={() => onhandleDetail('deaths', 'new')}>{number}</a>,
     },
     {
       title: 'New Recovered',
       dataIndex: 'NewRecovered',
       key: 'NewRecovered',
-      render: number => <div onClick={() => onhandleDetail('recovered', 'new')}>{number}</div>,
+      render: number => <a href="#" onClick={() => onhandleDetail('recovered', 'new')}>{number}</a>,
     },
     {
       title: 'Total Confirmed',
       dataIndex: 'TotalConfirmed',
       key: 'TotalConfirmed',
-      render: number => <div onClick={() => onhandleDetail('confirmed', 'total')}>{number}</div>,
+      render: number => <a href="#" onClick={() => onhandleDetail('confirmed', 'total')}>{number}</a>,
     },
     {
       title: 'Total Deaths',
       dataIndex: 'TotalDeaths',
       key: 'TotalDeaths',
-      render: number => <div onClick={() => onhandleDetail('deaths', 'total')}>{number}</div>,
+      render: number => <a href="#" onClick={() => onhandleDetail('deaths', 'total')}>{number}</a>,
     },
     {
       title: 'Total Recovered',
       dataIndex: 'TotalRecovered',
       key: 'TotalRecovered',
-      render: number => <div onClick={() => onhandleDetail('recovered', 'total')}>{number}</div>,
+      render: number => <a href="#" onClick={() => onhandleDetail('recovered', 'total')}>{number}</a>,
     },
   ];
 

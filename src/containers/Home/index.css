@@ -1,3 +1,9 @@
+.full-page {
+    background-color: #242B42;
+    height: 100%;
+    min-height: 100vh;
+}
+
 .page-wrap {
     max-width: 960px;
     padding: 40px;
